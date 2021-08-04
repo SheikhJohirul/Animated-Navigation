@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+body{
+	font-family: 'Open Sans', sans-serif;
+	background: #2c3e50;
+}
+nav{
+	position: relative;
+	width: 590px;
+	height: 50px;
+	background: #34495e;
+	border-radius: 8px;
+	font-size: 0;
+	box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1);
+}
+nav a{
+	position: relative;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 15px;
+	line-height: 50px;
+	color: #fff;
+	z-index: 1;
+	display: inline-block;
+	text-align: center;
+}
+nav .animation{
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100px;
+	background: #1abc9c;
+	z-index: 0;
+	border-radius: 8px;
+	transition: all .5s ease 0s;
+}
+nav a:nth-child(1){
+	width: 100px;
+}
+nav .start-home,a:nth-child(1):hover~.animation{
+	width: 100px;
+	left: 0;
+}
+nav a:nth-child(2){
+	width: 110px;
+}
+nav .start-About,a:nth-child(2):hover~.animation{
+	width: 110px;
+	left: 100px;
+}
+nav a:nth-child(3){
+	width: 100px;
+
+}
+nav .start-Blog,a:nth-child(3):hover~.animation{
+	width: 100px;
+	left: 210px;
+}
+nav a:nth-child(4){
+	width: 160px;
+}
+nav .start-Portfolio,a:nth-child(4):hover~.animation{
+	width: 160px;
+	left: 310px;
+}
+nav a:nth-child(5){
+	width: 120px;
+}
+nav .start-Contact,a:nth-child(5):hover~.animation{
+	width: 120px;
+	left: 470px;
+}
+/*nav---end*/
